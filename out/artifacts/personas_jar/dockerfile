@@ -1,0 +1,4 @@
+FROM openjdk:17
+ADD personas.jar personas.jar
+EXPOSE 8090
+ENTRYPOINT ["java", "-jar", "/personas.jar"]
